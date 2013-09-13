@@ -34,7 +34,7 @@ class Main(Module):
 
     def response(self, nick, args, kwargs):
         url = urlunparse(('https', 'www.google.com', 'search', '',
-            urlencode({'num': '100', 'safe': 'off', 'hl': 'en', 'q': 'site:songmeanings.net ' + args[0]}), ''))
+            urlencode({'num': '100', 'safe': 'off', 'hl': 'en', 'q': 'site:songmeanings.com ' + args[0]}), ''))
         soup = getsoup(url)
         new = None
         for h3 in soup.findAll('h3', attrs={'class': 'r'}):
