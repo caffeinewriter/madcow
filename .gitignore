@@ -1,14 +1,83 @@
-# artifacts
+# python bytecode
 *.pyo
 *.pyc
+
+# backups
+*.bak
+*?~
+
+# other VCS
+.svn/
+CVS/
+RCS/
+
+# common build artifacts
+*.class
 *.so
-# dev stuff
+*.dylib
+*.o
+*.d
+*.a
+
+# distutils output
 /build/
 /dist/
 /test.py
 /MANIFEST
+
+# git is not a place to backup releases plz
+*.tar.gz
+*.tar.bz2
+*.tgz
+*.tbz
+*.zip
+
 # data files when running in-place
 /settings.py
 /db/
 /log/
 /data/
+
+# <Apple> "If only there were both a per-user and system-wide folder whose sole
+# purpose is to store preferences, application state, and caches. Something
+# like a "Library", to pick a name at random. But since there isn't, and it's
+# too radical an idea to ever be realized, we'll just put this shit LITERALLY
+# EVERYWHERE, INCLUDING OBVIOUSLY-NOT-OSX VOLUMES LIKE FAT32. . Nobody will
+# mind, right? Great! (FUCKERS)
+.DS_Store
+.localized
+.localized/
+.metadata_never_index
+.TemporaryItems/
+.DocumentRevisions-V100/
+.Spotlight-V100/
+.Trashes/
+.fseventsd/
+.vol/
+._*
+._*/
+
+# logging
+typescript
+nohup.out
+*.log
+
+# tmp files i am fond of using
+foo
+foo/
+foo.*
+foo.*/
+bar
+bar/
+bar.*
+bar.*/
+1
+2
+3
+tmp*
+tmp*/
+work/
+X.*
+X.*/
+Y.*
+Y.*/
